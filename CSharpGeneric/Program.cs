@@ -10,6 +10,8 @@ namespace CSharpGeneric
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hellow Word!");
+            Console.ReadLine();
         }
     }
 }
