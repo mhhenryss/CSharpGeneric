@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CSharpGeneric.Model;
 
 namespace CSharpGeneric
 {
@@ -11,13 +6,13 @@ namespace CSharpGeneric
     {
         static void Main(string[] args)
         {
-            var drinkFactory = new DrinkFactory();
+            //var drinkFactory = new DrinkFactory();
 
             var customer = new Customer();
 
-            customer.BuyDrink(drinkFactory.ProvideDrink<Tea>());
-            customer.BuyDrink(drinkFactory.ProvideDrink<Coffee>());
-            customer.BuyDrink(drinkFactory.ProvideDrink<Cola>());
+            //customer.BuyDrink(drinkFactory.ProvideDrink<Tea>());
+            //customer.BuyDrink(drinkFactory.ProvideDrink<Coffee>());
+            //customer.BuyDrink(drinkFactory.ProvideDrink<Cola>());
 
             Console.ReadLine();
         }
@@ -25,13 +20,13 @@ namespace CSharpGeneric
 
     internal class Customer
     {
-        public void BuyDrink(IDrink drink)
-        {
-            Console.WriteLine($"Customer spent {drink.GetPrice()} on a cup of {drink.GetName()}");
-        }
+        //public void BuyDrink(IDrink drink)
+        //{
+        //    Console.WriteLine($"Customer spent {drink.GetPrice()} on a cup of {drink.GetName()}");
+        //}
     }
 
-    internal class Cola : IDrink
+    internal class Cola
     {
         public string GetName()
         {
@@ -44,7 +39,7 @@ namespace CSharpGeneric
         }
     }
 
-    internal class Tea : IDrink
+    internal class Tea
     {
         public string GetName()
         {
@@ -57,7 +52,7 @@ namespace CSharpGeneric
         }
     }
 
-    internal class Coffee : IDrink
+    internal class Coffee
     {
         public string GetName()
         {
