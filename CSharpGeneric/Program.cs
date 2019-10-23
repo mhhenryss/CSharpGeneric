@@ -11,13 +11,11 @@ namespace CSharpGeneric
     {
         static void Main(string[] args)
         {
-            TestArrayList();
+            
         }
 
-        private static void TestArrayList()
+        private static void TestArrayList(ArrayList arrayList)
         {
-            var arrayList = new ArrayList();
-
             foreach (var item in arrayList)
             {
                 Console.WriteLine(item);
@@ -26,11 +24,9 @@ namespace CSharpGeneric
             Console.ReadLine();
         }
 
-        //private static void TestList()
+        //private static void TestList(List<int> list)
         //{
-        //    var ints = new List<int>();
-
-        //    foreach (var i in ints)
+        //    foreach (var i in list)
         //    {
         //        Console.WriteLine(i);
         //    }
